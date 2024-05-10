@@ -5,7 +5,7 @@ const Star = ({ selected, onClick }) => {
     return (
         <FaStar
             className='star'
-            color={selected ? 'f1d21e' : '#4b4a47'}
+            color={selected ? '#f1d21e' : '#8e9091'}
             onClick={onClick}
             style={{ cursor: 'pointer' }}
         />
