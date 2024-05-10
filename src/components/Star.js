@@ -7,7 +7,7 @@ const Star = ({ selected, onClick }) => {
     className='star'
       color={selected ? 'f1d21e' : '#4b4a47'}
       onClick={onClick}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: 'pointer'}}
     />
   );
 };

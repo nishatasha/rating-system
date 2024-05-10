@@ -3,14 +3,14 @@ import Star from './Star';
 
 const StarRating = () => {
   const [rating, setRating] = useState(0);
-  const words = ['Worse', 'Bad', 'Okay', 'Good', 'Excellent'];
+  const words = ['Bad', 'Okay', 'Good', 'Very Good', 'Excellent!'];
 
   const handleStarClick = (index) => {
     setRating(index + 1);
   };
 
   return (
-    <div>
+    <div className='ratings'>
       {[...Array(5)].map((_, index) => (
         <Star
           key={index}
