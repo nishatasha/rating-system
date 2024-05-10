@@ -5,7 +5,7 @@ import './css/index.css';
 
 const App = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [openDialogClicked, setOpenDialogClicked] = useState(false); 
+  const [openDialogClicked, setOpenDialogClicked] = useState(false);
   const handleOpenDialog = () => {
     setDialogOpen(true);
     setOpenDialogClicked(true);
@@ -13,7 +13,7 @@ const App = () => {
 
   const handleCloseDialog = () => {
     setDialogOpen(false);
-    setOpenDialogClicked(false); 
+    setOpenDialogClicked(false);
   };
 
   return (
@@ -21,8 +21,10 @@ const App = () => {
       <div className="app">
         <StarRating />
       </div>
-      
-      {!openDialogClicked && <button className="dialog" onClick={handleOpenDialog}>Open Dialog</button>}
+
+      {!openDialogClicked &&
+        <button className="dialog"
+          onClick={handleOpenDialog}>Open Dialog</button>}
       {dialogOpen && <Dialog onClose={handleCloseDialog} />}
     </section>
   );
