@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/nishatasha/rating-system/",
+  "homepage": "https://nishatasha.github.io/rating-system/",
   "eslintConfig": {
     "extends": [
       "react-app",
